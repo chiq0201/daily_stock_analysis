@@ -2,6 +2,7 @@ name: 每日股票分析
 
 on:
   schedule:
+    - cron: '0 4 * * 1-5'      # 周一到周五，UTC 04:00 = 北京时间 12:00（中午）
     - cron: '0 12 * * 1-5'     # 周一到周五，UTC 12:00 = 北京时间 20:00
   workflow_dispatch:
     inputs:
